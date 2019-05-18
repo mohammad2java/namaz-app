@@ -105,7 +105,7 @@
 			          </descriptorRefs>
 			          <archive>
 			            <manifest>
-			              <mainClass>com.alarm.namazApp.NamazApp</mainClass>
+			              <mainClass>com.alarm.namaz.NamazApp</mainClass>
 			              
 			            </manifest>
 			          </archive>
