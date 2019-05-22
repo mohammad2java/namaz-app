@@ -110,4 +110,17 @@ public class GeneralUtil {
 		return String.format(cron, mins, hrs);
 	}
 	
+	
+	public static String findConfigValue(String key, String defaultVal) {
+		String ret = defaultVal;
+		Properties props = loadProp("setting");
+		String val = props.getProperty(key);
+		if (StringUtils.isNotBlank(val)) {
+			ret = val;
+		} else {
+			storeIntoProp(key, ret);
+		}
+		return ret;
+	}
+	
 }
